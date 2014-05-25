@@ -34,13 +34,14 @@ define(["jquery","af-state",'af-loader',"renderer"],function($, ViewState, loade
 				
 					self.populateFields();
 
+					self._flow.emit(ViewState.AFTER_LOAD, stateId);
+					
 				});
 								
 			});
 					
 			self._flow.on(ViewState.AFTER_LOAD, function(stateId){
 				console.log("AFTER_LOAD:"+stateId);
-				//FIXME does not work with the callback stack
 			});
 			
 			self._flow.start();

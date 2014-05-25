@@ -13,8 +13,7 @@ define(["af-state","af-transition","EventEmitter"], function(ViewState, Transiti
 			console.log("moving to state: "+ destination);
 
 			this.emit(ViewState.BEFORE_LOAD, destination);
-			this._currentState = destination;
-			this.emit(ViewState.AFTER_LOAD, destination);
+			this._currentState = destination;			
 
 		});
 		
