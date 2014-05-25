@@ -1,8 +1,3 @@
-	<script>
-		
-
-				
-	</script>
 	<div id="header">
 		<h1>Start Test</h1>
 	</div>

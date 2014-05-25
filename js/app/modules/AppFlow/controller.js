@@ -1,8 +1,9 @@
-define(["af-state","renderer"],function(ViewState,renderer){
+define(["jquery","af-state","renderer"],function($, ViewState,renderer){
  
 	function GenericController(flow, container){
 		this._flow = flow;
 		this._container = container;
+		this._model = {};
 		var self = this;
 
 		//when the user click on an .action trigger it on the appflow
@@ -20,7 +21,7 @@ define(["af-state","renderer"],function(ViewState,renderer){
 			var viewState = self._flow.getState(stateId);
 			
 			//load template
-			renderer.render(viewState.getTemplate(), container, false, function(){});
+			renderer.render(self._model, viewState.getTemplate(), container, false, function(){});
 			
 		});
 				

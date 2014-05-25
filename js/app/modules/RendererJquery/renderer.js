@@ -2,7 +2,7 @@ define(['jquery'], function($){
 
 	return {
 
-		render: function(template, destination, append, callback){
+		render: function(model, template, destination, append, callback){
 			
 			$.get(template, function(templateData) {
 

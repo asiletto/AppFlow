@@ -17,9 +17,7 @@ require.config({
 	'af-state': '../app/modules/AppFlow/state',
 	'af-flow': '../app/modules/AppFlow/flow',
 	'af-loader': '../app/modules/AppFlow/loader',
-	
-	//app modules
-	'GenericController': '../app/modules/GenericController/controller',
+	'af-controller': '../app/modules/AppFlow/controller',
 	
 	}
 
