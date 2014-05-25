@@ -1,23 +1,19 @@
 require(['require-config'], function() {
 
-	require(['jquery','af-loader','af-state','GenericController'], 
+	require(['jquery','af-controller'], 
 	
-	function($, loader, ViewState, GenericController){
+	function($, GenericController){
 						
-			loader.load('./js/app/modules/TestAcutezzaVisiva/flow.js', function(flow){
-			
-				console.log("loaded flow: ",flow);
-						
-				var controller = new GenericController(flow, "#container");
+			var controller = new GenericController(
+				'./js/app/modules/TestAcutezzaVisiva/flow.js',
+				"#container",
+				function(){
 				
-				var firstState = controller.getCurrentState();
+					console.log("controller loaded");
+				
+				});
 
-				console.log("first state: " + firstState.getId());
 			
-			
-			
-			});
-						
 	});
 
 });
