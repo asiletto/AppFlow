@@ -5,7 +5,7 @@ define(function(){
 	"states": [
 		{
 			"id":"startTest",
-			"template":"templates/TestAcutezzaVisiva/startTest.tpl",
+			"template":"js/app/modules/TestAcutezzaVisiva/templates/startTest.tpl",
 			"transitions": [
 				{
 					"on":"next",
@@ -15,7 +15,7 @@ define(function(){
 		},
 		{
 			"id":"displayLetter",
-			"template":"templates/TestAcutezzaVisiva/displayLetter.tpl",
+			"template":"js/app/modules/TestAcutezzaVisiva/templates/displayLetter.tpl",
 			"transitions": [
 				{
 					"on":"next",
@@ -25,7 +25,7 @@ define(function(){
 		},
 		{
 			"id":"identifyLetter",
-			"template":"templates/TestAcutezzaVisiva/identifyLetter.tpl",
+			"template":"js/app/modules/TestAcutezzaVisiva/templates/identifyLetter.tpl",
 			"transitions": [
 				{
 					"on":"continue",
@@ -40,7 +40,7 @@ define(function(){
 		},
 		{
 			"id":"results",
-			"template":"templates/TestAcutezzaVisiva/results.tpl",
+			"template":"js/app/modules/TestAcutezzaVisiva/templates/results.tpl",
 			"transitions": [
 				{
 					"on":"next",
